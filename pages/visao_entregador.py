@@ -1,5 +1,5 @@
 import pandas as pd
-from haversine import haversine
+from haversine import haversine, Unit
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
@@ -217,4 +217,5 @@ with tab1:
             df_aux02 = df2.loc[df2['City'] == 'Urban', :].head(10)
             df_aux03 = df2.loc[df2['City'] =='Semi-Urban', :].head(10)
             df3 = pd.concat([df_aux01, df_aux02, df_aux03] ).reset_index(drop=True)
+
             st.dataframe(df3)
