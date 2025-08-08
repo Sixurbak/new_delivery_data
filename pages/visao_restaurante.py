@@ -1,7 +1,7 @@
 #🏨 Visão Restaurante
 
 import pandas as pd
-from haversine import haversine
+from haversine import haversine, Unit
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
@@ -313,4 +313,5 @@ with tab1:
         # Adiciona uma borda à esquerda para centralizar
         col_space, col_table, col_space2 = st.columns([2, 3, 2])
         with col_table:
+
             st.dataframe(df_aux, width=500, height=473)
