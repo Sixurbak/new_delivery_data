@@ -1,5 +1,5 @@
 import pandas as pd
-from haversine import haversine
+from haversine import haversine, Unit
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
